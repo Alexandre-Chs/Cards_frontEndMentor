@@ -1,0 +1,149 @@
+/*NORMALIZE*/
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    height: 100%;
+    font-family: "Kumbh Sans",sans-serif;
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
+    background-position: left 50vw top 45vh, right 45vw bottom 45vh;
+    background-repeat: no-repeat;
+}
+/*CARDS DESIGN*/
+.wrapper {
+    height: 357px;
+    width: 300px;
+    border-radius: 10px;   
+    background-color: #FFF;
+}
+
+.background-top {
+    background-color: hsl(185, 75%, 39%);   
+    height: 130px;
+    width: 100%;
+    border-radius: 10px 10px 0 0; 
+}
+
+
+.profil-img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    bottom: 55px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: solid white 5px;
+    background-color: white;
+}
+
+.name-age {
+    display:flex;
+    justify-content: center;
+    position: relative;
+    bottom: 30px;
+}
+
+.name-age p:first-child {
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%)
+}
+
+.name-age p:last-child {
+    font-weight:400;
+    color: hsl(227, 10%, 46%)
+}
+
+.country {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+}
+.country > p{
+    font-size: 14px;
+    color: hsl(227, 10%, 46%);
+}
+
+.border-line {
+    display: block;
+    height: 1px;
+    background-color: hsla(0, 0%, 59%, 0.301)
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.stats > p {
+    font-weight: 700;
+    color: hsl(229, 23%, 23%)
+}
+
+.stats p:first-child {
+    padding-left: 30px;
+}
+
+.stats p:last-child {
+    padding-right: 30px;
+}
+
+.name-stats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.name-stats > p{
+    font-size: 11px;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+
+.name-stats p:first-child {
+    padding-left: 15px;
+}
+
+.name-stats p:nth-child(2) {
+    padding-right: 6px;
+}
+.name-stats p:last-child {
+    padding-right: 27px;
+}
+
+/* POSITION BACKGROUND CIRCLE */
+.circle-top {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.circle-bot {
+    position: fixed;
+    top: 380px;
+    left: 500px;
+}
+/*MEDIA QUERIES*/
+@media (max-width:375px) {
+
+    body {
+        background-position: left 30vw top 44vh, right 40vw bottom 45vh;
+    }
+}
